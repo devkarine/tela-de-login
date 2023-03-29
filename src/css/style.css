@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  max-width: 1140px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  width: clamp(40rem, 4vh, 60rem);
+  height: 60rem;
+}
+
+.wrapper .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.wrapper .card p {
+  width: 30rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form label {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.form input {
+  width: clamp(30rem, 4vh, 38.4rem);
+  height: 5.3rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #e2e8f0;
+  padding: 1.2rem;
+  margin-top: 1rem;
+}
+
+.form input:focus {
+  border: 0.1rem solid #7c3aed;
+  padding-left: 1.2rem;
+}
+
+::placeholder {
+  padding-left: 1.2rem;
+}
+
+strong {
+  color: #7c3aed;
+  cursor: pointer;
+  width: 13rem;
+}
+
+strong:hover {
+  border-bottom: 0.1rem solid #b3b3b3;
+}
+
+.form button {
+  width: clamp(30rem, 4vh, 38.4rem);
+  height: 5.6rem;
+  background-color: #7c3aed;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+}
+
+.form button:hover {
+  opacity: 0.8;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control.success input {
+  border: 0.1rem solid #4eca64;
+}
+
+.form-control.error input {
+  border: 0.1rem solid red;
+}
+
+.form-control.error small {
+  color: red;
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
